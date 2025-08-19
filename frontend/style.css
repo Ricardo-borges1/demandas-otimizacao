@@ -1,0 +1,284 @@
+/* Ajuste no body para usar flexbox */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* altura total da tela */
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #dbeafe, #eff6ff);
+}
+
+/* Container principal deve crescer para preencher o espaço */
+.container {
+  flex: 1; /* ocupa o espaço entre header e footer */
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer sempre embaixo */
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+}
+
+
+h1 {
+  text-align: center;
+  color: #1e40af;
+  margin-bottom: 25px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header label {
+  flex: 1 1 250px;
+}
+
+.header input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.header button {
+  padding: 10px 20px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.header button:hover {
+  background-color: #2563eb;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.demanda-card {
+  background: #eff6ff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.demanda-card h3 {
+  margin: 0 0 12px 0;
+  color: #1e40af;
+}
+
+.demanda-card label {
+  font-weight: bold;
+  margin-top: 8px;
+  display: block;
+}
+
+.demanda-card input, .demanda-card textarea {
+  width: 100%;
+  margin-top: 4px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.demanda-card textarea {
+  height: 60px;
+  resize: vertical;
+}
+
+.demanda-card button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.demanda-card button:hover {
+  background-color: #2563eb;
+}
+
+.botoes {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.btn-principal {
+  background-color: #10b981;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.btn-principal:hover {
+  background-color: #059669;
+}
+
+.btn-relatorio {
+  background-color: #f59e0b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.btn-relatorio:hover {
+  background-color: #d97706;
+}
+
+pre {
+  background: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column; /* empilha os elementos */
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: flex-start;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #1e3a8a;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.btn-nova {
+  align-self: flex-end; /* botão à direita */
+  padding: 12px 25px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-nova:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+.demanda-card {
+  background: #cccaca60;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.demanda-card textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.demanda-card .closeCard {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ef4444;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.demanda-card .closeCard:hover {
+  background: #b91c1c;
+}
+
+
+/* HEADER */
+header {
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+footer i {
+  color: #10b981; /* cor do ícone */
+}
+

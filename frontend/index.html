@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Caderno de Demandas - TI Carapicuíba</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    Demandas do Robinho - TI Carapicuíba
+  </header>
+
+  <div class="container">
+    <h1>Demandas do Robinho</h1>
+
+    <div class="header">
+      <div class="input-group">
+        <label>Data:</label>
+        <input type="date" id="data" required>
+      </div>
+
+      <div class="input-group">
+        <label>Responsáveis:</label>
+        <input type="text" id="responsaveis" placeholder="Ex: Ricardo / Rubens / Teo" required>
+      </div>
+
+      <button id="addDemanda" class="btn-nova">+ Nova Demanda</button>
+    </div>
+
+    <div id="demandaCards" class="cards-container"></div>
+
+    <div class="botoes">
+      <button id="salvarTodas" class="btn-principal">💾 Salvar Demandas</button>
+      <button id="gerarRelatorio" class="btn-relatorio">📄 Gerar Relatório</button>
+      <button id="copiarRelatorio" class="btn-relatorio">📋 Copiar WhatsApp</button>
+    </div>
+
+    <pre id="relatorio"></pre>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    Sistema de gerenciamento de demandas - 2025 - TI Carapicuíba
+    <i>💻</i> Programado por Ricardo Borges
+</footer>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
